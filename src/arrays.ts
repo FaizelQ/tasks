@@ -1,3 +1,5 @@
+import { addAbortSignal } from "stream";
+
 /**
  * Consume an array of numbers, and return a new array containing
  * JUST the first and last number. If there are no elements, return
@@ -5,14 +7,16 @@
  * the number twice.
  */
 export function bookEndList(numbers: number[]): number[] {
-    const arrayLength: number = numbers.length;
-    if (arrayLength === 0) {
-        return [...numbers];
-    } else if (arrayLength == 1) {
-        return [...numbers, numbers[0]];
-    } else {
-        return [numbers[0], numbers[arrayLength - 1]];
+    const bookArr = [...numbers]; //splice into new array
+    if (bookArr.length > 1) {
+        const multipleElements = [bookArr[0], bookArr[bookArr.length - 1]];
+        return multipleElements;
     }
+    if (bookArr.length === 1) {
+        const oneElement = [bookArr[0], bookArr[0]];
+        return oneElement;
+    }
+    return bookArr; //returns array if 0 elements
 }
 
 /**
@@ -20,8 +24,8 @@ export function bookEndList(numbers: number[]): number[] {
  * number has been tripled (multiplied by 3).
  */
 export function tripleNumbers(numbers: number[]): number[] {
-    const tripleArray: number[] = numbers.map((num: number): number => num * 3);
-    return tripleArray;
+    const tripled = numbers.map((num: number): number => num * 3);
+    return tripled;
 }
 
 /**
