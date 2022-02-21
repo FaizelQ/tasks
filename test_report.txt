@@ -2,18 +2,38 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
+FAIL src/arrays.test.ts
+  ● Testing the array functions › Testing the injectPositive function
+
+    TypeError: Reduce of empty array with no initial value
+        at Array.reduce (<anonymous>)
+
+      131 |     const noNegatives = values.every((num: number): boolean => num > 0);
+      132 |     if (noNegatives) {
+    > 133 |         const sum = values.reduce(
+          |                            ^
+      134 |             (total: number, num: number): number => (total += num)
+      135 |         );
+      136 |         return [...values, sum];
+
+      at injectPositive (src/arrays.ts:133:28)
+      at Object.<anonymous> (src/arrays.test.ts:268:16)
+
 PASS src/HtmlCss.test.tsx
+PASS src/functions.test.ts
 PASS src/text.test.tsx
 PASS src/App.test.tsx
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |     100 |      100 |     100 |     100 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
-----------|---------|----------|---------|---------|-------------------
+--------------|---------|----------|---------|---------|-------------------
+File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------|---------|----------|---------|---------|-------------------
+All files     |   89.47 |    96.55 |    93.1 |   89.04 |                   
+ App.tsx      |     100 |      100 |     100 |     100 |                   
+ arrays.ts    |   85.71 |    94.73 |    90.9 |    84.9 | 138-147           
+ functions.ts |     100 |      100 |     100 |     100 |                   
+--------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 3 passed, 3 total
-Tests:       9 passed, 9 total
+Test Suites: 1 failed, 4 passed, 5 total
+Tests:       1 failed, 22 passed, 23 total
 Snapshots:   0 total
-Time:        3.468 s
+Time:        3.742 s
 Ran all test suites.
