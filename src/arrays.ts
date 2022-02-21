@@ -128,6 +128,10 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
+    if (values.length === 0) {
+        const result = [0];
+        return result;
+    }
     const noNegatives = values.every((num: number): boolean => num > 0);
     if (noNegatives) {
         const sum = values.reduce(
@@ -140,7 +144,8 @@ export function injectPositive(values: number[]): number[] {
         );
         const partialArr = values.slice(0, negativeIndex);
         const sum = partialArr.reduce(
-            (total: number, num: number): number => (total += num)
+            (total: number, num: number): number => (total += num),
+            0
         );
         const finalArr: number[] = [...values];
         finalArr.splice(negativeIndex + 1, 0, sum);
