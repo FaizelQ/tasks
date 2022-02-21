@@ -12,6 +12,7 @@ export function fahrenheitToCelius(temperature: number): number {
  * if the number is greater than zero.
  */
 export function add3(first: number, second: number, third: number): number {
+    // eslint-disable-next-line @typescript-eslint/no-inferrable-types
     let total: number = 0;
     if (first > 0) {
         total += first;
