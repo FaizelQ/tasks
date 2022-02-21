@@ -89,14 +89,14 @@ export function allRGB(colors: string[]): boolean {
     if (colors.length === 0) {
         return true;
     }
-    const colorValue: boolean = colors.every(
+    const colorValue = colors.every(
         (color: string): boolean =>
-            color === "red" || color === "green" || color === "green"
+            color === "red" || color === "blue" || color === "green"
     );
     return colorValue;
 }
 
-/**
+/**t
  * Consumes an array of numbers, and produces a string representation of the
  * numbers being added together along with their actual sum.
  *
