@@ -1,4 +1,3 @@
-import { stringify } from "querystring";
 import { Question, QuestionType } from "./interfaces/question";
 
 /**
@@ -154,5 +153,12 @@ export function mergeQuestion(
     contentQuestion: Question,
     { points }: { points: number }
 ): Question {
-    return contentQuestion;
+    const mergedQuestion = {
+        ...contentQuestion,
+        id: id,
+        name: name,
+        points: points,
+        published: false
+    };
+    return mergedQuestion;
 }
