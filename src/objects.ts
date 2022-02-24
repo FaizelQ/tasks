@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import { Question, QuestionType } from "./interfaces/question";
 
 /**
@@ -10,7 +11,17 @@ export function makeBlankQuestion(
     name: string,
     type: QuestionType
 ): Question {
-    return {};
+    const blankQuestion: Question = {
+        id: id,
+        name: name,
+        type: type,
+        expected: "",
+        body: "",
+        options: [],
+        points: 1,
+        published: false
+    };
+    return blankQuestion;
 }
 
 /**
@@ -21,6 +32,11 @@ export function makeBlankQuestion(
  * HINT: Look up the `trim` and `toLowerCase` functions.
  */
 export function isCorrect(question: Question, answer: string): boolean {
+    if (
+        answer.trim().toLowerCase() === question.expected.trim().toLowerCase()
+    ) {
+        return true;
+    }
     return false;
 }
 
