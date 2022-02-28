@@ -1,3 +1,4 @@
+import { stringify } from "querystring";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
 
@@ -102,7 +103,23 @@ id,name,options,points,published
  * Check the unit tests for more examples!
  */
 export function toCSV(questions: Question[]): string {
-    return "";
+    let csvResult = "id,name,options,points,published";
+    csvResult += questions.reduce(
+        (str: string, question: Question): string =>
+            str +
+            "\n" +
+            question.id +
+            "," +
+            question.name +
+            "," +
+            question.options.length +
+            "," +
+            question.points +
+            "," +
+            question.published,
+        ""
+    );
+    return csvResult;
 }
 
 /**
