@@ -1,8 +1,3 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
-import { rename } from "fs";
-import { stringify } from "querystring";
-import { idText, sortAndDeduplicateDiagnostics } from "typescript";
-import { urlToHttpOptions } from "url";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
 import {
