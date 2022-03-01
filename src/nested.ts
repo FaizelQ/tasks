@@ -1,8 +1,10 @@
 import { getValue } from "@testing-library/user-event/dist/utils";
+import { rename } from "fs";
 import { stringify } from "querystring";
 import { idText } from "typescript";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
+import { makeBlankQuestion, renameQuestion } from "./objects";
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
@@ -184,7 +186,7 @@ export function addNewQuestion(
     name: string,
     type: QuestionType
 ): Question[] {
-    return [];
+    return [...questions, makeBlankQuestion(id, name, type)];
 }
 
 /***
@@ -197,7 +199,15 @@ export function renameQuestionById(
     targetId: number,
     newName: string
 ): Question[] {
-    return [];
+    const result = [
+        ...questions.map(
+            (question: Question): Question =>
+                question.id === targetId
+                    ? renameQuestion(question, newName)
+                    : question
+        )
+    ];
+    return result;
 }
 
 /***
