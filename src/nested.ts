@@ -1,7 +1,8 @@
 import { getValue } from "@testing-library/user-event/dist/utils";
 import { rename } from "fs";
 import { stringify } from "querystring";
-import { idText } from "typescript";
+import { idText, sortAndDeduplicateDiagnostics } from "typescript";
+import { urlToHttpOptions } from "url";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
 import { makeBlankQuestion, renameQuestion } from "./objects";
@@ -253,7 +254,26 @@ export function editOption(
     targetOptionIndex: number,
     newOption: string
 ) {
-    return [];
+    return [
+        ...questions.map((question: Question): Question => {
+            const editQuestionOption = {
+                ...question,
+                options: [...question.options]
+            };
+            if (question.id === targetId) {
+                if (targetOptionIndex === -1) {
+                    editQuestionOption.options.push(newOption);
+                } else {
+                    editQuestionOption.options.splice(
+                        targetOptionIndex,
+                        1,
+                        newOption
+                    );
+                }
+            }
+            return editQuestionOption;
+        })
+    ];
 }
 
 /***
