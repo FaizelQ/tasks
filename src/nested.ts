@@ -5,7 +5,11 @@ import { idText, sortAndDeduplicateDiagnostics } from "typescript";
 import { urlToHttpOptions } from "url";
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
-import { makeBlankQuestion, renameQuestion } from "./objects";
+import {
+    duplicateQuestion,
+    makeBlankQuestion,
+    renameQuestion
+} from "./objects";
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
@@ -287,5 +291,15 @@ export function duplicateQuestionInArray(
     targetId: number,
     newId: number
 ): Question[] {
-    return [];
+    const dupIndex = questions.findIndex(
+        (question: Question): boolean => targetId === question.id
+    );
+
+    const dupArray = [...questions];
+    dupArray.splice(
+        dupIndex + 1,
+        0,
+        duplicateQuestion(newId, questions[dupIndex])
+    );
+    return dupArray;
 }
