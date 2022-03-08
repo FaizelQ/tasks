@@ -3,41 +3,37 @@ import { Button } from "react-bootstrap";
 
 export function StartAttempt(): JSX.Element {
     const [attemptsLeft, setAttempt] = useState<number>(4);
-    const [quizProgress, setProgress] = useState<boolean>(false);
+    const [quizState, setQuizState] = useState<boolean>(false);
 
-    function quizStart(): void {
-        setAttempt(attemptsLeft > 0 ? attemptsLeft - 1 : attemptsLeft);
-        setProgress(attemptsLeft > 0 ? changeState() : false);
+    function startQuiz(): void {
+        setQuizState(true);
+        setAttempt(attemptsLeft - 1);
     }
 
-    function changeState(): boolean {
-        let result = false;
-        if (attemptsLeft > 0 && quizProgress === false) {
-            result = true;
-        }
-        return result;
+    function stopQuiz(): void {
+        setQuizState(false);
     }
 
     return (
         <div>
-            <p>Number of attempts left: {attemptsLeft}</p>
+            <span>Attempts left: {attemptsLeft}</span>
             <div>
-                <Button onClick={() => quizStart()} disabled={!changeState()}>
+                <Button
+                    onClick={startQuiz}
+                    disabled={quizState || attemptsLeft === 0}
+                >
                     Start Quiz
                 </Button>
             </div>
             <div>
-                <Button
-                    onClick={() => setProgress(false)}
-                    disabled={!quizProgress}
-                >
+                <Button onClick={stopQuiz} disabled={!quizState}>
                     Stop Quiz
                 </Button>
             </div>
             <div>
                 <Button
-                    onClick={() => setAttempt(1 + attemptsLeft)}
-                    disabled={quizProgress}
+                    onClick={() => setAttempt(attemptsLeft + 1)}
+                    disabled={quizState}
                 >
                     Mulligan
                 </Button>
