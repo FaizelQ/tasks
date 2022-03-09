@@ -44,11 +44,13 @@ export function ChooseTeam(): JSX.Element {
                     ))}
                 </Col>
                 <Col>
+                    <div>
+                        <Button onClick={clearTeam}>Clear Team</Button>
+                    </div>
                     <strong>Team:</strong>
                     {team.map((member: string) => (
                         <li key={member}>{member}</li>
                     ))}
-                    <Button onClick={clearTeam}>Clear Team</Button>
                 </Col>
             </Row>
         </div>
