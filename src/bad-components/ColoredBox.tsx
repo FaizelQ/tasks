@@ -52,7 +52,7 @@ export function ColoredBox(): JSX.Element {
                     colorIndex={colorIndex}
                     setColorIndex={setColorIndex}
                 ></ChangeColor>
-                <ColorPreview colorIndex={colorIndex}></ColorPreview>
+                <ColorPreview colorIndex={colorIndex} w></ColorPreview>
             </div>
         </div>
     );
