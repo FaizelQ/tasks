@@ -19,7 +19,7 @@ export function CheckAnswer({
         <div>
             <h3>Check Answer</h3>
             <Form.Group controlId="formCheckAnswer" as={Row}>
-                <Form.Label column sm={2}>
+                <Form.Label column sm={1}>
                     Answer Box
                 </Form.Label>
                 <Col>
