@@ -1,0 +1,124 @@
+{
+    "CISC_QUESTIONS": [
+        {
+            "id": 1,
+            "name": "Question 1",
+            "body": "What is the course number for Intro To Computer Science I (ex. answer CISCXXX)?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "CISC108",
+            "points": 1,
+            "published": true
+        },
+        {
+            "id": 2,
+            "name": "Question 2",
+            "body": "What is the course number for Intro To Computer Science II (ex. answer CISCXXX)?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "CISC181",
+            "points": 1,
+            "published": true
+        },
+        {
+            "id": 3,
+            "name": "Question 3",
+            "body": "What is the course number for Intro To Systems Programming (ex. answer CISCXXX)?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "CISC210",
+            "points": 1,
+            "published": true
+        },
+        {
+            "id": 4,
+            "name": "Question 4",
+            "body": "What is the course number for Intro to Algorithms (ex. answer CISCXXX)?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "CISC320",
+            "points": 1,
+            "published": true
+        },
+        {
+            "id": 5,
+            "name": "Question 5",
+            "body": "What is the course number for Intro To Software Engineering (ex. answer CISCXXX)?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "CISC275",
+            "points": 1,
+            "published": true
+        }
+    ],
+    "MATH_QUESTIONS": [
+        {
+            "id": 6,
+            "name": "Question 1",
+            "body": "What is 2*(3+2) + 1?",
+            "type": "multiple_choice_question",
+            "options": ["11", "9", "12"],
+            "expected": "11",
+            "points": 3,
+            "published": true
+        },
+        {
+            "id": 7,
+            "name": "Question 2",
+            "body": "7 + 6 + 5 + 4 / (2 * 3 + 5)?",
+            "type": "multiple_choice_question",
+            "options": ["3", "12", "2", "11"],
+            "expected": "2",
+            "points": 3,
+            "published": true
+        },
+        {
+            "id": 8,
+            "name": "Question 3",
+            "body": "What are the first 30 digits of pi?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "3.141592653589793238462643383279",
+            "points": 10,
+            "published": true
+        }
+    ],
+    "NAME_QUESTIONS": [
+        {
+            "id": 9,
+            "name": "Question 1",
+            "body": "What is my first name?",
+            "type": "multiple_choice_question",
+            "options": ["Faziel", "Faizel", "Fazeil"],
+            "expected": "Faizel",
+            "points": 5,
+            "published": true
+        },
+        {
+            "id": 10,
+            "name": "Question 2",
+            "body": "How do you spell my middle name?",
+            "type": "short_answer_questions",
+            "options": [],
+            "expected": "Muhammad",
+            "points": 5,
+            "published": true
+        },
+        {
+            "id": 11,
+            "name": "Question 3",
+            "body": "What is my last name?",
+            "type": "multiple_choice_question",
+            "options": [
+                "Quabil",
+                "Quaibili",
+                "Quabili",
+                "Qubabili",
+                "Quablili"
+            ],
+            "expected": "Quabili",
+            "points": 5,
+            "published": true
+        }
+    ]
+}
