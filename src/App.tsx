@@ -24,6 +24,7 @@ function App(): JSX.Element {
                 also Hello World!
             </header>
             <Quizzer></Quizzer>
+
             <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
