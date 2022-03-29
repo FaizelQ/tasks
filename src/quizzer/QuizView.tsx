@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button, Col, Form } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import QUIZDATA from "../data/quizzes.json";
@@ -8,7 +7,7 @@ export default React.memo(QuizView);
 
 type ChangeEvent = React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>;
 interface AddQuizProps {
-    AddQuiz: (
+    addQuiz: (
         title: string,
         questions: number,
         description: string,
@@ -25,9 +24,10 @@ export function QuizView(): JSX.Element {
     //defualt edit mode is false
     const [editMode, setEdit] = useState<boolean>(false);
 
-    function addNewQuiz(
+    //Creates new list of quizzes
+    function addQuiz(
         title: string,
-        numQuestions: string,
+        numQuestions: number,
         description: string,
         id: string
     ): void {
@@ -41,13 +41,15 @@ export function QuizView(): JSX.Element {
             }
         ]);
     }
-    function addQuizEditMode({ AddQuiz }: AddQuizProps): JSX.Element {
-        const [title, setTitle] = useState<string>("Enter quiz title");
-        const [numQuestions, setNumQuestions] = useState<string>("0");
+
+    //Creates four forms to input fields of new quiz
+    function AddQuizForms({ addQuiz }: AddQuizProps): JSX.Element {
+        const [title, setTitle] = useState<string>("Enter Quiz Title");
+        const [numQuestions, setNumQuestions] = useState<number>(0);
         const [description, setDescription] = useState<string>(
-            "Enter quiz description"
+            "Enter Quiz Description"
         );
-        const [id, setID] = useState<string>("x_QUESTIONS");
+        const [id, setID] = useState<string>("Type Quiz ID");
         return (
             <div>
                 <Form.Group controlId="form-quiz-title">
@@ -56,6 +58,7 @@ export function QuizView(): JSX.Element {
                     </Form.Label>
                     <Col>
                         <Form.Control
+                            className="w-50"
                             type="text"
                             value={title}
                             onChange={(evt: ChangeEvent) =>
@@ -70,10 +73,16 @@ export function QuizView(): JSX.Element {
                     </Form.Label>
                     <Col>
                         <Form.Control
+                            className="w-50"
                             type="number"
                             value={numQuestions}
                             onChange={(evt: ChangeEvent) =>
-                                setNumQuestions(evt.target.value)
+                                //if not a number make 0
+                                setNumQuestions(
+                                    isNaN(parseInt(evt.target.value))
+                                        ? 0
+                                        : Number(evt.target.value)
+                                )
                             }
                         ></Form.Control>
                     </Col>
@@ -84,6 +93,7 @@ export function QuizView(): JSX.Element {
                     </Form.Label>
                     <Col>
                         <Form.Control
+                            className="w-50"
                             type="text"
                             as="textarea"
                             rows={3}
@@ -100,6 +110,7 @@ export function QuizView(): JSX.Element {
                     </Form.Label>
                     <Col>
                         <Form.Control
+                            className="w-50"
                             type="text"
                             value={id}
                             onChange={(evt: ChangeEvent) =>
@@ -108,11 +119,12 @@ export function QuizView(): JSX.Element {
                         ></Form.Control>
                     </Col>
                 </Form.Group>
+                <br></br>
                 <div>
                     {/*Button to add quiz*/}
                     <Button
                         onClick={() =>
-                            addNewQuiz(title, numQuestions, description, id)
+                            addQuiz(title, numQuestions, description, id)
                         }
                     >
                         Add Quiz
@@ -124,45 +136,66 @@ export function QuizView(): JSX.Element {
 
     return (
         <div>
-            <h3>Quizzes</h3>
-            {/*checkbox for edit mod*/}
-            <div>
-                <Form.Check
-                    type="checkbox"
-                    id="checkbox-edit-mode"
-                    label="Edit Mode"
-                    checked={editMode}
-                    onChange={() => setEdit(!editMode)}
-                ></Form.Check>
-            </div>
+            <h3>Quiz List</h3>
+            <br></br>
             {/*mapping quizzes*/}
             <div>
                 <ol>
                     {quizzes.map(
                         (quiz: Quiz): JSX.Element => (
                             <li key={quiz.title}>
-                                {quiz.title}
                                 <div
                                     style={{
-                                        border: "3px sold black",
+                                        border: "3px solid black",
                                         padding: "3px",
                                         width: "1200px"
                                     }}
                                 >
-                                    {quiz.description}
-                                    <br>
+                                    <div>
+                                        <h3>{quiz.title}</h3>
+                                    </div>
+                                    <div>
+                                        {quiz.description}
+                                        <div></div>
                                         {"Number of Questions: " +
                                             quiz.questions}
                                         {/*total points?*/}
-                                    </br>
+                                    </div>
+                                    <div>
+                                        <Button>Take Quiz</Button>
+                                    </div>
                                 </div>
-                                <div>
-                                    <Button>Take Quiz</Button>
-                                </div>
+                                <br></br>
                             </li>
                         )
                     )}
                 </ol>
+                <div>
+                    {/*checkbox for edit mod*/}
+                    <div
+                        style={{
+                            border: "2px solid black",
+                            padding: "3px",
+                            width: "115px",
+                            backgroundColor: "#ECE329"
+                        }}
+                    >
+                        <Form.Check
+                            type="checkbox"
+                            id="checkbox-edit-mode"
+                            label="Edit Mode"
+                            checked={editMode}
+                            onChange={() => setEdit(!editMode)}
+                        ></Form.Check>
+                    </div>
+                    {editMode ? (
+                        <AddQuizForms addQuiz={addQuiz}></AddQuizForms>
+                    ) : (
+                        <span>
+                            To Add/Delete a Quiz, Edit Mode Must Be Selected
+                        </span>
+                    )}
+                </div>
             </div>
         </div>
     );
