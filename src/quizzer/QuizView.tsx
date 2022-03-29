@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Form } from "react-bootstrap";
+import { Button, Col, Form, Row } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import QUIZDATA from "../data/quizzes.json";
 import { idText } from "typescript";
@@ -134,6 +134,14 @@ export function QuizView(): JSX.Element {
         );
     }
 
+    function deleteQuiz(removeTitle: string): void {
+        //removes passed in quiz from quizzes using filter function
+        const removedQuizList = quizzes.filter(
+            (quiz: Quiz): boolean => quiz.title !== removeTitle
+        );
+        setQuizzes(removedQuizList);
+    }
+
     return (
         <div>
             <h3>Quiz List</h3>
@@ -162,7 +170,28 @@ export function QuizView(): JSX.Element {
                                         {/*total points?*/}
                                     </div>
                                     <div>
-                                        <Button>Take Quiz</Button>
+                                        <Col>
+                                            <Button>Take Quiz</Button>
+                                        </Col>
+                                        <div
+                                            style={{
+                                                height: "3px",
+                                                backgroundColor: "white"
+                                            }}
+                                        ></div>
+                                        <Col>
+                                            {editMode ? (
+                                                <Button
+                                                    onClick={() =>
+                                                        deleteQuiz(quiz.title)
+                                                    }
+                                                >
+                                                    Delete Quiz
+                                                </Button>
+                                            ) : (
+                                                <></>
+                                            )}
+                                        </Col>
                                     </div>
                                 </div>
                                 <br></br>
