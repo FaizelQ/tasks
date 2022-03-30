@@ -1,0 +1,20 @@
+[
+    {
+        "title": "CISC Class Questions",
+        "questions": 5,
+        "description": "You will have to figure out the course number only by the course title",
+        "id": "CISC_QUESTIONS"
+    },
+    {
+        "title": "Simple Math",
+        "questions": 3,
+        "description": "You will have to answer basic math questions",
+        "id": "MATH_QUESTIONS"
+    },
+    {
+        "title": "Figure Out My Name",
+        "questions": 3,
+        "description": "You will need to spell my First, Last, and Middle names",
+        "id": "NAME_QUESTIONS"
+    }
+]
