@@ -33,4 +33,14 @@ describe("Quizzer Tests", () => {
             screen.getByRole("button", { name: /Add Quiz/i })
         ).toBeInTheDocument();
     });
+    test("Edit mode switches into edit mode and quiz fields open up", () => {
+        const editCheckBox = screen.getByRole("checkbox");
+        editCheckBox.click();
+        const quizTitle = screen.getByTestId("quiz-title-test");
+        const quizNumQuestions = screen.getByTestId(
+            "quiz-number-questions-test"
+        );
+        const quizDescription = screen.getByTestId("quiz-description-test");
+        const quizId = screen.getByTestId("quiz-id-test");
+    });
 });

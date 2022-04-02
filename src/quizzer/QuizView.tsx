@@ -54,7 +54,10 @@ export function QuizView(): JSX.Element {
         const [id, setID] = useState<string>("Type Quiz ID");
         return (
             <div>
-                <Form.Group controlId="form-quiz-title">
+                <Form.Group
+                    data-testid="quiz-title-test"
+                    controlId="form-quiz-title"
+                >
                     <Form.Label column sm={2}>
                         Quiz Title:
                     </Form.Label>
@@ -69,7 +72,10 @@ export function QuizView(): JSX.Element {
                         ></Form.Control>
                     </Col>
                 </Form.Group>
-                <Form.Group controlId="form-quiz-numquestions">
+                <Form.Group
+                    data-testid="quiz-number-questions-test"
+                    controlId="form-quiz-numquestions"
+                >
                     <Form.Label column sm={2}>
                         Number of Questions:
                     </Form.Label>
@@ -89,7 +95,10 @@ export function QuizView(): JSX.Element {
                         ></Form.Control>
                     </Col>
                 </Form.Group>
-                <Form.Group controlId="form-quiz-description">
+                <Form.Group
+                    data-testid="quiz-description-test"
+                    controlId="form-quiz-description"
+                >
                     <Form.Label column sm={2}>
                         Quiz Description:
                     </Form.Label>
@@ -106,7 +115,7 @@ export function QuizView(): JSX.Element {
                         ></Form.Control>
                     </Col>
                 </Form.Group>
-                <Form.Group controlId="form-quiz-ID">
+                <Form.Group data-testid="quiz-id-test" controlId="form-quiz-ID">
                     <Form.Label column sm={2}>
                         Quiz ID (ex. MATH_QUESTIONS):
                     </Form.Label>
