@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { Quiz } from "../interfaces/quiz";
 import QUIZDATA from "../data/quizzes.json";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { idText } from "typescript";
 export default React.memo(QuizView);
 
