@@ -19,13 +19,668 @@ PASS src/form-components/GiveAttempts.test.tsx
 PASS src/form-components/ChangeColor.test.tsx
 PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
+FAIL src/quizzer/QuizView.test.tsx
+  ● Quizzer Tests › Number of questions is displayed (one or two digits)
+
+    TestingLibraryElementError: Unable to find an element with the text: /Number of Questions: \d\d/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuiz List[0m
+          [36m</h3>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<ol>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mCISC Class Questions[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to figure out the course number only by the course title[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 5[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mSimple Math[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to answer basic math questions[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mFigure Out My Name[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will need to spell my First, Last, and Middle names[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+            [36m</ol>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 2px solid black; padding: 3px; width: 115px; background-color: rgb(236, 227, 41);"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mEdit Mode[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span>[39m
+                [0mTo Add/Delete a Quiz, Edit Mode Must Be Selected[0m
+              [36m</span>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      12 |     test("Number of questions is displayed (one or two digits)", () => {
+      13 |         expect(
+    > 14 |             screen.getByText(/Number of Questions: \d\d/i)
+         |                    ^
+      15 |         ).toBeInTheDocument();
+      16 |     });
+      17 |     test("There is a take quiz button", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/QuizView.test.tsx:14:20)
+
+  ● Quizzer Tests › There is a take quiz button
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Take Quiz/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz[0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuiz List[0m
+          [36m</h3>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<ol>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mCISC Class Questions[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to figure out the course number only by the course title[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 5[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mSimple Math[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to answer basic math questions[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mFigure Out My Name[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will need to spell my First, Last, and Middle names[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+            [36m</ol>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 2px solid black; padding: 3px; width: 115px; background-color: rgb(236, 227, 41);"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mEdit Mode[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span>[39m
+                [0mTo Add/Delete a Quiz, Edit Mode Must Be Selected[0m
+              [36m</span>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      17 |     test("There is a take quiz button", () => {
+      18 |         expect(
+    > 19 |             screen.getByRole("button", { name: /Take Quiz/i })
+         |                    ^
+      20 |         ).toBeInTheDocument();
+      21 |     });
+      22 |     test("Edit mode is there and is checkbox", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/QuizView.test.tsx:19:20)
+
+  ● Quizzer Tests › Edit mode switches into edit mode
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Delete Quiz/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mDelete Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mDelete Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mDelete Quiz[0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuiz List[0m
+          [36m</h3>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<ol>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mCISC Class Questions[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to figure out the course number only by the course title[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 5[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mDelete Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mSimple Math[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to answer basic math questions[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mDelete Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mFigure Out My Name[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will need to spell my First, Last, and Middle names[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mDelete Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+            [36m</ol>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 2px solid black; padding: 3px; width: 115px; background-color: rgb(236, 227, 41);"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mEdit Mode[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-title"[39m
+                  [36m>[39m
+                    [0mQuiz Title:[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-title"[39m
+                      [33mtype[39m=[32m"text"[39m
+                      [33mvalue[39m=[32m"Enter Quiz Title"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-numquestions"[39m
+                  [36m>[39m
+                    [0mNumber of Questions:[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-numquestions"[39m
+                      [33mtype[39m=[32m"number"[39m
+                      [33mvalue[39m=[32m"0"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-description"[39m
+                  [36m>[39m
+                    [0mQuiz Description:[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-description"[39m
+                      [33mrows[39m=[32m"3"[39m
+                      [33mtype[39m=[32m"text"[39m
+                    [36m>[39m
+                      [0mEnter Quiz Description[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-ID"[39m
+                  [36m>[39m
+                    [0mQuiz ID (ex. MATH_QUESTIONS):[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-ID"[39m
+                      [33mtype[39m=[32m"text"[39m
+                      [33mvalue[39m=[32m"Type Quiz ID"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+                [36m<div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-primary"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mAdd Quiz[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      28 |         editCheckBox.click();
+      29 |         expect(
+    > 30 |             screen.getByRole("button", { name: /Delete Quiz/i })
+         |                    ^
+      31 |         ).toBeInTheDocument();
+      32 |         expect(
+      33 |             screen.getByRole("button", { name: /Add Quiz/i })
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/QuizView.test.tsx:30:20)
+
 PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
+PASS src/quizzer/Quizzer.test.tsx
 PASS src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |     100 |     98.8 |     100 |     100 |                   
+All files                    |   96.36 |    96.66 |   93.57 |   96.28 |                   
  src                         |     100 |      100 |     100 |     100 |                   
   App.tsx                    |     100 |      100 |     100 |     100 |                   
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
@@ -53,10 +708,670 @@ All files                    |     100 |     98.8 |     100 |     100 |
  src/interfaces              |       0 |        0 |       0 |       0 |                   
   answer.ts                  |       0 |        0 |       0 |       0 |                   
   question.ts                |       0 |        0 |       0 |       0 |                   
+  quiz.ts                    |       0 |        0 |       0 |       0 |                   
+ src/quizzer                 |   56.52 |    66.66 |      40 |   54.54 |                   
+  QuizView.tsx               |   54.54 |    66.66 |   35.71 |   52.38 | 36,67-144,188     
+  Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 20 passed, 20 total
-Tests:       134 passed, 134 total
+Summary of all failing tests
+FAIL src/quizzer/QuizView.test.tsx
+  ● Quizzer Tests › Number of questions is displayed (one or two digits)
+
+    TestingLibraryElementError: Unable to find an element with the text: /Number of Questions: \d\d/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuiz List[0m
+          [36m</h3>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<ol>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mCISC Class Questions[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to figure out the course number only by the course title[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 5[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mSimple Math[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to answer basic math questions[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mFigure Out My Name[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will need to spell my First, Last, and Middle names[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+            [36m</ol>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 2px solid black; padding: 3px; width: 115px; background-color: rgb(236, 227, 41);"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mEdit Mode[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span>[39m
+                [0mTo Add/Delete a Quiz, Edit Mode Must Be Selected[0m
+              [36m</span>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      12 |     test("Number of questions is displayed (one or two digits)", () => {
+      13 |         expect(
+    > 14 |             screen.getByText(/Number of Questions: \d\d/i)
+         |                    ^
+      15 |         ).toBeInTheDocument();
+      16 |     });
+      17 |     test("There is a take quiz button", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/QuizView.test.tsx:14:20)
+
+  ● Quizzer Tests › There is a take quiz button
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Take Quiz/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mTake Quiz[0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuiz List[0m
+          [36m</h3>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<ol>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mCISC Class Questions[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to figure out the course number only by the course title[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 5[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mSimple Math[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to answer basic math questions[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mFigure Out My Name[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will need to spell my First, Last, and Middle names[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+            [36m</ol>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 2px solid black; padding: 3px; width: 115px; background-color: rgb(236, 227, 41);"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mEdit Mode[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span>[39m
+                [0mTo Add/Delete a Quiz, Edit Mode Must Be Selected[0m
+              [36m</span>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      17 |     test("There is a take quiz button", () => {
+      18 |         expect(
+    > 19 |             screen.getByRole("button", { name: /Take Quiz/i })
+         |                    ^
+      20 |         ).toBeInTheDocument();
+      21 |     });
+      22 |     test("Edit mode is there and is checkbox", () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/QuizView.test.tsx:19:20)
+
+  ● Quizzer Tests › Edit mode switches into edit mode
+
+    TestingLibraryElementError: Found multiple elements with the role "button" and name `/Delete Quiz/i`
+
+    Here are the matching elements:
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mDelete Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mDelete Quiz[0m
+    [36m</button>[39m
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<button[39m
+      [33mclass[39m=[32m"btn btn-primary"[39m
+      [33mtype[39m=[32m"button"[39m
+    [36m>[39m
+      [0mDelete Quiz[0m
+    [36m</button>[39m
+
+    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h3>[39m
+            [0mQuiz List[0m
+          [36m</h3>[39m
+          [36m<br />[39m
+          [36m<div>[39m
+            [36m<ol>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mCISC Class Questions[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to figure out the course number only by the course title[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 5[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mDelete Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mSimple Math[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will have to answer basic math questions[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mDelete Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"border: 3px solid black; padding: 3px; width: 1200px;"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<h3>[39m
+                      [0mFigure Out My Name[0m
+                    [36m</h3>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [0mYou will need to spell my First, Last, and Middle names[0m
+                    [36m<div />[39m
+                    [0mNumber of Questions: 3[0m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTake Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mstyle[39m=[32m"height: 3px; background-color: white;"[39m
+                    [36m/>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"col"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"btn btn-primary"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mDelete Quiz[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</li>[39m
+            [36m</ol>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"border: 2px solid black; padding: 3px; width: 115px; background-color: rgb(236, 227, 41);"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mid[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtype[39m=[32m"checkbox"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mfor[39m=[32m"checkbox-edit-mode"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mEdit Mode[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-title"[39m
+                  [36m>[39m
+                    [0mQuiz Title:[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-title"[39m
+                      [33mtype[39m=[32m"text"[39m
+                      [33mvalue[39m=[32m"Enter Quiz Title"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-numquestions"[39m
+                  [36m>[39m
+                    [0mNumber of Questions:[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-numquestions"[39m
+                      [33mtype[39m=[32m"number"[39m
+                      [33mvalue[39m=[32m"0"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-description"[39m
+                  [36m>[39m
+                    [0mQuiz Description:[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-description"[39m
+                      [33mrows[39m=[32m"3"[39m
+                      [33mtype[39m=[32m"text"[39m
+                    [36m>[39m
+                      [0mEnter Quiz Description[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label col-form-label col-sm-2"[39m
+                    [33mfor[39m=[32m"form-quiz-ID"[39m
+                  [36m>[39m
+                    [0mQuiz ID (ex. MATH_QUESTIONS):[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"col"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"w-50 form-control"[39m
+                      [33mid[39m=[32m"form-quiz-ID"[39m
+                      [33mtype[39m=[32m"text"[39m
+                      [33mvalue[39m=[32m"Type Quiz ID"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+                [36m<div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"btn btn-primary"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mAdd Quiz[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      28 |         editCheckBox.click();
+      29 |         expect(
+    > 30 |             screen.getByRole("button", { name: /Delete Quiz/i })
+         |                    ^
+      31 |         ).toBeInTheDocument();
+      32 |         expect(
+      33 |             screen.getByRole("button", { name: /Add Quiz/i })
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
+      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
+      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/QuizView.test.tsx:30:20)
+
+
+Test Suites: 1 failed, 21 passed, 22 total
+Tests:       3 failed, 137 passed, 140 total
 Snapshots:   0 total
-Time:        16.189 s
+Time:        13.054 s
 Ran all test suites.
